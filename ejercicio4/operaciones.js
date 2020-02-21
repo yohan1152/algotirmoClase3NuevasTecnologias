@@ -2,27 +2,19 @@
 
 let cantidad = 0;
 let iteraciones = 0;
-let contar = 0;
+let contarMayor = 0;
+let contarMenorIgual = 0;
 
 iteraciones = parseInt (prompt("Cuántas cantidades desea ingresar ?"));
 
 for(i=0;i<iteraciones;i++){
-   estatura = parseInt (prompt("Ingresar estatura de la persona: "+contarPersonas));
+   cantidad = parseInt (prompt("Ingresar cantidad: "));
    if(cantidad>0){
-
-   }eñse{
-
+      contarMayor++;
+   }else{
+      contarMenorIgual++;
    }
 }
 
-do{
-    
-   //Se valida que el valor que se captura sea un número mayor a cero y que no sea una letra.
-   //Si no cumple alguno de estos requisitos no se acumula ni se cuenta el usuario
-   if(estatura>0){
-      sumaEstatura += estatura;
-      contarPersonas ++;
-   }
- }while(estatura>0);
-
- document.writeln("El promedio de estatura es: "+ (sumaEstatura/contarPersonas));
+document.writeln("El total de cantidades mayores a cero es: "+ contarMayor+"<br>");
+document.writeln("El total de cantidades menores o iguales a cero es: "+ contarMenorIgual);
